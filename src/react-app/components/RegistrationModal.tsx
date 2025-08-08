@@ -565,7 +565,7 @@ export default function RegistrationModal({ isOpen, onClose }: RegistrationModal
                             onChange={(e) => handleInputChange('organizationName', e.target.value)}
                             onBlur={() => handleFieldBlur('organizationName')}
                       required
-                            placeholder="Enter your organization legal name"
+                            placeholder="Enter your State or Organization name"
                             aria-invalid={!!getFieldError('organizationName')}
                             aria-describedby={getFieldError('organizationName') ? 'organizationName-error' : undefined}
                             className={`w-full text-base border rounded-lg px-4 py-3 focus:ring-2 focus:border-blue-500 outline-none transition-all duration-200 ${
@@ -609,7 +609,7 @@ export default function RegistrationModal({ isOpen, onClose }: RegistrationModal
 
                 {/* Address */}
                                 <div>
-                  <label className="block text-base font-medium heading-color mb-1">Address*</label>
+                  <label className="block text-base font-medium heading-color mb-1">Address* (To Book the Travel)</label>
                   <input
                     type="text"
                           name="street"
@@ -736,7 +736,7 @@ export default function RegistrationModal({ isOpen, onClose }: RegistrationModal
 
                 {/* Contact */}
                                 <div>
-                  <label className="block text-base font-medium heading-color mb-1">Phone*</label>
+                  <label className="block text-base font-medium heading-color mb-1">Phone* (To Coordinate Travel Arrangements)</label>
                   <div className="flex">
                     <input
                             ref={phoneAreaRef}
